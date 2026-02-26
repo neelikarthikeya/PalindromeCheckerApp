@@ -1,29 +1,27 @@
-import java.util.Scanner;
-
 public class PalindromeCheckerApp {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        String input = "radar";
 
-        System.out.println("=== Palindrome Checker App - UC3 ===");
-        System.out.print("Enter a string: ");
-        String original = scanner.nextLine();
+        // Convert string to char array
+        char[] chars = input.toCharArray();
 
-        String reversed = "";
+        int start = 0;
+        int end = chars.length - 1;
 
-        // Reverse string using for loop
-        for (int i = original.length() - 1; i >= 0; i--) {
-            reversed = reversed + original.charAt(i);
+        boolean isPalindrome = true;
+
+        while (start < end) {
+            if (chars[start] != chars[end]) {
+                isPalindrome = false;
+                break;
+            }
+            start++;
+            end--;
         }
 
-        // Compare original and reversed string
-        if (original.equals(reversed)) {
-            System.out.println("Result: It is a Palindrome.");
-        } else {
-            System.out.println("Result: It is NOT a Palindrome.");
-        }
-
-        scanner.close();
+        System.out.println("Input: " + input);
+        System.out.println("Is Palindrome? " + isPalindrome);
     }
 }
