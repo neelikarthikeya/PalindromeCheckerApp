@@ -1,20 +1,21 @@
-# Use Case 11 – Object-Oriented Palindrome Service
+# Use Case 12 – Strategy Pattern for Palindrome Algorithms
 
 ## 🎯 Goal
-Encapsulate palindrome logic inside a service class.
+Select palindrome algorithm dynamically using Strategy Pattern.
 
 ## 🔄 Flow
-1. Create PalindromeService class
-2. Implement checkPalindrome() method
-3. Call method from main class
+1. Define PalindromeStrategy interface
+2. Implement multiple strategies (Stack, Deque)
+3. Inject strategy at runtime
 
 ## 🧠 Key Concepts
-- Encapsulation
-- Single Responsibility Principle
-- Clean OOP Design
+- Interface
+- Polymorphism
+- Strategy Design Pattern
+- Runtime Algorithm Selection
 
 ## ⏱ Time Complexity
 O(n)
 
 ## 🌿 Branch Name
-UC11-OOPPalindrome
+UC12-StrategyPattern
