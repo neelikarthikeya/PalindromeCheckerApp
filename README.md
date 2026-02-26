@@ -1,17 +1,15 @@
-# PalindromeCheckerApp
+## Use Case 3 – Palindrome Check Using String Reverse
 
-## Objective
-To create a console-based Java application to check whether a string is palindrome.
+Goal:
+Check whether a string is palindrome by reversing it.
 
-## Use Case 1
-Displays application welcome message and version details.
+Flow:
+1. Accept input from user
+2. Reverse the string using for loop
+3. Compare original and reversed string
+4. Display result
 
-## Project Flow
-1. Create repository
-2. Create branch
-3. Implement use case logic
-4. Commit and push changes
-5. Merge to main
-
+Branch Name:
+UC3-StringReversePalindrome
 
 
