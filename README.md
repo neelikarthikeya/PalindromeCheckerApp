@@ -1,21 +1,21 @@
-# Use Case 10 – Case-Insensitive & Space-Ignored Palindrome
+# Use Case 12 – Strategy Pattern for Palindrome Algorithms
 
 ## 🎯 Goal
-Validate palindrome by ignoring spaces and case differences.
+Select palindrome algorithm dynamically using Strategy Pattern.
 
 ## 🔄 Flow
-1. Normalize string (remove spaces & symbols)
-2. Convert to lowercase
-3. Apply standard palindrome check
+1. Define PalindromeStrategy interface
+2. Implement multiple strategies (Stack, Deque)
+3. Inject strategy at runtime
 
 ## 🧠 Key Concepts
-- String preprocessing
-- Regular expressions
-- Case conversion
-- Symmetric comparison
+- Interface
+- Polymorphism
+- Strategy Design Pattern
+- Runtime Algorithm Selection
 
 ## ⏱ Time Complexity
 O(n)
 
 ## 🌿 Branch Name
-UC10-NormalizedPalindrome
+UC12-StrategyPattern

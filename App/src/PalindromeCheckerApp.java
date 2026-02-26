@@ -1,24 +1,71 @@
+import java.util.Stack;
+import java.util.Deque;
+import java.util.ArrayDeque;
+
+// Main Application
 public class PalindromeCheckerApp {
 
     public static void main(String[] args) {
 
-        String input = "A man a plan a canal Panama";
+        String input = "level";
 
-        // Step 1: Normalize string
-        String normalized = input.replaceAll("[^a-zA-Z]", "").toLowerCase();
+        // Choose strategy dynamically
+        PalindromeStrategy strategy = new StackStrategy();
+        // You can change to:
+        // PalindromeStrategy strategy = new DequeStrategy();
 
-        boolean isPalindrome = true;
+        boolean result = strategy.check(input);
 
-        // Step 2: Compare characters
-        for (int i = 0; i < normalized.length() / 2; i++) {
-            if (normalized.charAt(i) !=
-                    normalized.charAt(normalized.length() - 1 - i)) {
-                isPalindrome = false;
-                break;
+        System.out.println("Input: " + input);
+        System.out.println("Is Palindrome? " + result);
+    }
+}
+
+// Strategy Interface
+interface PalindromeStrategy {
+    boolean check(String input);
+}
+
+// Stack Based Strategy
+class StackStrategy implements PalindromeStrategy {
+
+    @Override
+    public boolean check(String input) {
+
+        Stack<Character> stack = new Stack<>();
+
+        for (char c : input.toCharArray()) {
+            stack.push(c);
+        }
+
+        for (char c : input.toCharArray()) {
+            if (c != stack.pop()) {
+                return false;
             }
         }
 
-        System.out.println("Input: " + input);
-        System.out.println("Is Palindrome? " + isPalindrome);
+        return true;
+    }
+}
+
+// Deque Based Strategy
+class DequeStrategy implements PalindromeStrategy {
+
+    @Override
+    public boolean check(String input) {
+
+        Deque<Character> deque = new ArrayDeque<>();
+
+        for (char c : input.toCharArray()) {
+            deque.add(c);
+        }
+
+        while (deque.size() > 1) {
+            if (deque.removeFirst() != deque.removeLast()) {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
