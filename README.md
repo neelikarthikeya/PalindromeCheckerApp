@@ -1,22 +1,22 @@
-# Use Case 7 – Deque-Based Optimized Palindrome Checker
+# Use Case 8 – Linked List Based Palindrome Checker
 
 ## 🎯 Goal
-Validate palindrome using Deque (Double Ended Queue).
+Validate palindrome using Singly Linked List.
 
 ## 🔄 Flow
-1. Insert characters into deque
-2. Remove first and last elements
-3. Compare both values
-4. Continue until deque size <= 1
+1. Convert string into linked list
+2. Find middle using fast & slow pointer
+3. Reverse second half
+4. Compare both halves
 
 ## 🧠 Key Concepts
-- Deque (Double Ended Queue)
-- removeFirst()
-- removeLast()
-- Optimized bidirectional comparison
+- Singly Linked List
+- Node Traversal
+- Fast & Slow Pointer Technique
+- In-place reversal
 
 ## ⏱ Time Complexity
 O(n)
 
 ## 🌿 Branch Name
-UC7-DequePalindrome
+UC8-LinkedListPalindrome
