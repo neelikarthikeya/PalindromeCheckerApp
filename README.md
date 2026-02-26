@@ -1,23 +1,22 @@
-# Use Case 6 – Queue + Stack Based Palindrome Check
+# Use Case 7 – Deque-Based Optimized Palindrome Checker
 
 ## 🎯 Goal
-Validate palindrome using both Queue (FIFO) and Stack (LIFO).
+Validate palindrome using Deque (Double Ended Queue).
 
 ## 🔄 Flow
-1. Enqueue characters into queue
-2. Push characters into stack
-3. Compare dequeue() with pop()
-4. Display result
+1. Insert characters into deque
+2. Remove first and last elements
+3. Compare both values
+4. Continue until deque size <= 1
 
 ## 🧠 Key Concepts
-- Queue (FIFO)
-- Stack (LIFO)
-- Enqueue & Dequeue
-- Push & Pop
-- Logical comparison
+- Deque (Double Ended Queue)
+- removeFirst()
+- removeLast()
+- Optimized bidirectional comparison
 
 ## ⏱ Time Complexity
 O(n)
 
 ## 🌿 Branch Name
-UC6-QueueStackPalindrome
+UC7-DequePalindrome
