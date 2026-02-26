@@ -1,21 +1,21 @@
-# Use Case 9 – Recursive Palindrome Checker
+# Use Case 10 – Case-Insensitive & Space-Ignored Palindrome
 
 ## 🎯 Goal
-Validate palindrome using recursion.
+Validate palindrome by ignoring spaces and case differences.
 
 ## 🔄 Flow
-1. Compare start and end characters
-2. If equal, recursively check inner substring
-3. Stop when start >= end
+1. Normalize string (remove spaces & symbols)
+2. Convert to lowercase
+3. Apply standard palindrome check
 
 ## 🧠 Key Concepts
-- Recursion
-- Base Condition
-- Call Stack
-- Divide and Conquer
+- String preprocessing
+- Regular expressions
+- Case conversion
+- Symmetric comparison
 
 ## ⏱ Time Complexity
 O(n)
 
 ## 🌿 Branch Name
-UC9-RecursivePalindrome
+UC10-NormalizedPalindrome
