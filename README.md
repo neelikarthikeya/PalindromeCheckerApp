@@ -1,15 +1,22 @@
-## Use Case 3 – Palindrome Check Using String Reverse
+# Use Case 5 – Stack Based Palindrome Checker
 
-Goal:
-Check whether a string is palindrome by reversing it.
+## 🎯 Goal
+Validate palindrome using Stack (LIFO principle).
 
-Flow:
-1. Accept input from user
-2. Reverse the string using for loop
-3. Compare original and reversed string
+## 🔄 Flow
+1. Push characters into stack
+2. Pop characters
+3. Compare with original string
 4. Display result
 
-Branch Name:
-UC3-StringReversePalindrome
+## 🧠 Key Concepts
+- Stack Data Structure
+- Push Operation
+- Pop Operation
+- LIFO Principle
 
+## ⏱ Time Complexity
+O(n)
 
+## 🌿 Branch Name
+UC5-StackPalindrome
