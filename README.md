@@ -1,21 +1,21 @@
-# Use Case 12 – Strategy Pattern for Palindrome Algorithms
+# Use Case 13 – Performance Comparison
 
 ## 🎯 Goal
-Select palindrome algorithm dynamically using Strategy Pattern.
+Compare execution time of different palindrome algorithms.
 
 ## 🔄 Flow
-1. Define PalindromeStrategy interface
-2. Implement multiple strategies (Stack, Deque)
-3. Inject strategy at runtime
+1. Capture start time using System.nanoTime()
+2. Execute palindrome logic
+3. Capture end time
+4. Calculate execution time
 
 ## 🧠 Key Concepts
-- Interface
-- Polymorphism
-- Strategy Design Pattern
-- Runtime Algorithm Selection
+- System.nanoTime()
+- Algorithm benchmarking
+- Performance comparison
 
 ## ⏱ Time Complexity
 O(n)
 
 ## 🌿 Branch Name
-UC12-StrategyPattern
+UC13-PerformanceComparison
