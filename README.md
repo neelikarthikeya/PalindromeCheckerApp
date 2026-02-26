@@ -1,22 +1,21 @@
-# Use Case 8 – Linked List Based Palindrome Checker
+# Use Case 9 – Recursive Palindrome Checker
 
 ## 🎯 Goal
-Validate palindrome using Singly Linked List.
+Validate palindrome using recursion.
 
 ## 🔄 Flow
-1. Convert string into linked list
-2. Find middle using fast & slow pointer
-3. Reverse second half
-4. Compare both halves
+1. Compare start and end characters
+2. If equal, recursively check inner substring
+3. Stop when start >= end
 
 ## 🧠 Key Concepts
-- Singly Linked List
-- Node Traversal
-- Fast & Slow Pointer Technique
-- In-place reversal
+- Recursion
+- Base Condition
+- Call Stack
+- Divide and Conquer
 
 ## ⏱ Time Complexity
 O(n)
 
 ## 🌿 Branch Name
-UC8-LinkedListPalindrome
+UC9-RecursivePalindrome
