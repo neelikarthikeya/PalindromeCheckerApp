@@ -1,15 +1,25 @@
-## Use Case 3 – Palindrome Check Using String Reverse
+# Use Case 4 – Character Array Based Palindrome Check
 
-Goal:
-Check whether a string is palindrome by reversing it.
+## 🎯 Goal
+Check whether a string is palindrome by converting it into a character array and using the two-pointer technique.
 
-Flow:
-1. Accept input from user
-2. Reverse the string using for loop
-3. Compare original and reversed string
-4. Display result
+## 🔄 Flow
+1. Convert string to char[]
+2. Initialize start pointer at 0
+3. Initialize end pointer at length - 1
+4. Compare characters while start < end
+5. Display result
 
-Branch Name:
-UC3-StringReversePalindrome
+## 🧠 Key Concepts
+- Character Array (char[])
+- Array Indexing
+- Two Pointer Technique
+- Time Complexity Awareness
+
+## ⏱ Time Complexity
+O(n)
+
+## 🌿 Branch Name
+UC4-CharArrayPalindrome
 
 
