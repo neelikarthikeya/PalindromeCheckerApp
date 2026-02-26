@@ -1,21 +1,20 @@
-# Use Case 10 – Case-Insensitive & Space-Ignored Palindrome
+# Use Case 11 – Object-Oriented Palindrome Service
 
 ## 🎯 Goal
-Validate palindrome by ignoring spaces and case differences.
+Encapsulate palindrome logic inside a service class.
 
 ## 🔄 Flow
-1. Normalize string (remove spaces & symbols)
-2. Convert to lowercase
-3. Apply standard palindrome check
+1. Create PalindromeService class
+2. Implement checkPalindrome() method
+3. Call method from main class
 
 ## 🧠 Key Concepts
-- String preprocessing
-- Regular expressions
-- Case conversion
-- Symmetric comparison
+- Encapsulation
+- Single Responsibility Principle
+- Clean OOP Design
 
 ## ⏱ Time Complexity
 O(n)
 
 ## 🌿 Branch Name
-UC10-NormalizedPalindrome
+UC11-OOPPalindrome
